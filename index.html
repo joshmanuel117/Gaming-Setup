@@ -7,87 +7,126 @@
   <!-- Fuente Orbitron para estilo gamer -->
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
       background: #0a0a0a url("./img/fondo2.png") no-repeat center center fixed;
       background-size: cover;
       color: #00ffff;
       font-family: 'Orbitron', sans-serif;
       text-align: center;
-      margin: 0;
-      padding: 50px;
+      min-height: 100vh;
+      padding: 50px 20px;
     }
 
     h1 {
       font-size: 48px;
       text-shadow: 0 0 10px #00ffff, 0 0 20px #ff00ff;
       margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 36px;
+      margin-top: 40px;
+      margin-bottom: 30px;
+      text-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff;
     }
 
     h4 {
       font-size: 24px;
       margin-top: 20px;
+      margin-bottom: 20px;
       color: white;
       text-shadow: 0 0 5px #00ffcc, 0 0 10px #ff00ff;
     }
 
-    nav h1 {
-      margin-top: 40px;
-      font-size: 36px;
-      text-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff;
+    nav {
+      margin-top: 50px;
     }
 
     ul {
       list-style: none;
-      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
     }
 
     li {
       font-size: 28px;
-      margin: 20px 0;
       background-color: rgba(255, 255, 255, 0.05);
       border: 2px solid #00ffff;
       border-radius: 10px;
-      padding: 15px;
-      transition: transform 0.3s, box-shadow 0.3s;
+      padding: 15px 25px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      min-width: 200px;
     }
 
     li:hover {
       transform: scale(1.05);
-      box-shadow: 0 0 20px #ff00ff;
+      box-shadow: 0 0 20px #ff00ff, inset 0 0 10px rgba(255, 0, 255, 0.3);
     }
 
-    nav ul li a {
+    a {
       color: #00ffcc;
       text-decoration: none;
       font-weight: bold;
+      display: block;
+      transition: color 0.3s ease;
     }
 
-    nav ul li a:visited {
+    a:visited {
       color: #00ffcc;
     }
 
-    nav ul li a:hover {
+    a:hover {
       color: #ffffff;
       text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
     }
 
-    nav ul li a:active {
+    a:active {
       color: #ff0066;
       text-shadow: 0 0 10px #ff0066, 0 0 20px #ff0066;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 32px;
+      }
+
+      h2 {
+        font-size: 24px;
+      }
+
+      li {
+        font-size: 20px;
+        min-width: 150px;
+      }
+
+      body {
+        padding: 30px 15px;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to the Gaming Setup!</h1>
-  <h4>En esta página encontrarás contenido sobre setups de gaming: Top de video, noticias y más!!</h4>
+  <header>
+    <h1>Welcome to the Gaming Setup!</h1>
+    <h4>En esta página encontrarás contenido sobre setups de gaming: Top de video, noticias y más!!</h4>
+  </header>
 
   <nav>
-    <h1>🔥 Top Videojuegos 🔥</h1>
+    <h2>🔥 Top Videojuegos 🔥</h2>
     <ul>
-      <li><a href="./views/halo.html">🎮 Halo</a></li>
-      <li><a href="./views/gears-of-war.html">⚙️ Gears of War</a></li>
-      <li><a href="./views/resident-evil.html">🧟 Resident Evil</a></li>
-      <li><a href="./views/call-of-duty.html">🕹️ Call of Duty</a></li>
+      <li><a href="./views/halo.html" title="Ver detalles de Halo">🎮 Halo</a></li>
+      <li><a href="./views/gears-of-war.html" title="Ver detalles de Gears of War">⚙️ Gears of War</a></li>
+      <li><a href="./views/resident-evil.html" title="Ver detalles de Resident Evil">🧟 Resident Evil</a></li>
+      <li><a href="./views/call-of-duty.html" title="Ver detalles de Call of Duty">🕹️ Call of Duty</a></li>
     </ul>
   </nav>
 </body>
