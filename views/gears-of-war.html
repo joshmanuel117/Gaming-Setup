@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gears of War</title> 
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
 <style>
     body {
         background: #f40c0c url('./img/gears-of-war-fondo2.jpg') no-repeat center center fixed;
@@ -85,11 +83,13 @@
                 La historia adquiere una profundidad emocional notable, especialmente a través de la búsqueda de Dom Santiago 
                 por encontrar a su esposa María. El juego amplía enormemente el universo, introduce enemigos más variados y 
                 presenta algunas de las batallas más espectaculares de la franquicia.</p>
-                <img src="./img/Gears-of-War-2-portada.jpg" alt="Gears of War 2" height="400" width="300">
+                <img src="./img/gears-of-war-2-portada.jpg" alt="Gears of War 2" height="400" width="300">
             </div>
         </div>
     </div>
 
+    <a href="./index.html">Volver al inicio</a>
+    
         <script>
             const headers = document.querySelectorAll('.accordion-header');
             headers.forEach(header => {
@@ -98,15 +98,11 @@
                     const accordion = item.parentElement;
                 
                     accordion.querySelectorAll('.accordion-item').forEach(i => {
-                        if (i !== item) {
-                            i.classList.remove('active');
-                        }
+                        if (i !== item) i.classList.remove('active');
                 });
                 item.classList.toggle('active');
             });
         });
         </script>
-    
-    <a href="./index.html">Volver al inicio</a>
 </body>
 </html>
