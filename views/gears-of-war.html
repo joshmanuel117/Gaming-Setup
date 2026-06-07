@@ -1,121 +1,120 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gears of War</title> 
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-<style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gears of War</title> 
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <style>
     body {
-        background: #f40c0c url('./img/gears-of-war-fondo2.jpg') no-repeat center center fixed;
-        background-size: cover;
-        background-color: #1a1a1a;
-        color: #ff0000;
-        font-family: 'Orbitron', sans-serif;
-        text-align: center;
-        margin: 0;
-        padding: 10px;
+      background: #f40c0c url("./img/gears-of-war-fondo2.jpg") no-repeat center center fixed;
+      background-size: cover;
+      background-color: #1a1a1a;
+      color: #ff0000;
+      font-family: 'Orbitron', sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 10px;
     }
 
     h2 {
-        font-size: 20px;
-        text-shadow: 0 0 10px #e100ff, 0 0 20px #ff0000;
-        margin-top: 20px;
+      font-size: 20px;
+      text-shadow: 0 0 10px #e100ff, 0 0 20px #ff0000;
+      margin-top: 20px;
     }
 
     p {
-        color: #ffffff;
-        font-size: 18px;
-        line-height: 1.6;
-        text-shadow: 0 0 5px #e100ff, 0 0 10px #ff0000;
-        margin-top: 20px;
+      color: #ffffff;
+      font-size: 18px;
+      line-height: 1.6;
+      text-shadow: 0 0 5px #e100ff, 0 0 10px #ff0000;
+      margin-top: 20px;
     }
 
     .accordion-item {
-        background: #030000;
-        border-radius: 10px;
-        margin-bottom: 10px;
-        overflow: hidden;
+      background: #030000;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      overflow: hidden;
     }
     
     .accordion-header {
-        padding: 15px;
-        cursor: pointer;
-        font-weight: bold;
-        background: #222;
-        transition: background 0.3s;
+      padding: 15px;
+      cursor: pointer;
+      font-weight: bold;
+      background: #222;
+      transition: background 0.3s;
     }
 
     .accordion-header:hover {
-        background: #030000;
+      background: #030000;
     }
 
     .accordion-content {
-        display: none;
-        padding: 0 15px;
-        background: #030000;
+      display: none;
+      padding: 0 15px;
+      background: #030000;
     }
 
     .active .accordion-content {
-        display: block;
+      display: block;
     }
 
     a {
-        display: inline-block;
-        margin-tpo: 20px;
-        color: #00d9ff;
-        text-decoration: none;
-        front-weight: bold;
+      display: inline-block;
+      margin-top: 20px;
+      color: #00d9ff;
+      text-decoration: none;
+      font-weight: bold;
     }
 
     a:hover {
       color: #ffffff;
       text-shadow: 0 0 10px #00d9ff, 0 0 20px #00d9ff;
     }
-
-    </style>
+  </style>
 </head>
 <body>
-    <img src="./img/logo_gears.png" height="200" width="500"
-    style="filter: drop-shadow(0 0 10px #f60000) drop-shadow(0 0 20px #00d9ff);">
-    <p>La serie Gears of War es una de las franquicias más reconocidas en el género de los videojuegos de disparos en tercera persona. 
-        Desarrollada por Epic Games y publicada por Microsoft Studios, la serie se centra en la lucha de la humanidad contra 
-        una raza de criaturas conocidas como los Locust, que emergen de debajo de la tierra para atacar a la humanidad. El juego es 
-        conocido por su jugabilidad intensa, su historia épica y su estilo visual oscuro y atmosférico.</p>
-    
-        <h2>🔥Aqui te nuestro un top de los mejores juegos de Gears of War según la crítica🔥</h2>
-<br>
-    <div class="accordion">
-        <div class="accordion-item">
-            <div class="accordion-header">1. Gears of War 2 (100/100)</div>
-            <div class="accordion-content">
-                <p>Considerado por muchos como el mejor de toda la saga. La guerra contra los Locust se intensifica 
-                cuando las ciudades humanas comienzan a hundirse misteriosamente. Marcus y Delta Squad emprenden una 
-                ofensiva a gran escala para detener la amenaza desde su origen.
-                <br>
-                La historia adquiere una profundidad emocional notable, especialmente a través de la búsqueda de Dom Santiago 
-                por encontrar a su esposa María. El juego amplía enormemente el universo, introduce enemigos más variados y 
-                presenta algunas de las batallas más espectaculares de la franquicia.</p>
-                <img src="./img/gears-of-war-2-portada.jpg" alt="Gears of War 2" height="400" width="300">
-            </div>
-        </div>
-    </div>
+  <img src="./img/logo-gears.png" alt="Logo Gears of War" height="200" width="500"
+       style="filter: drop-shadow(0 0 10px #f60000) drop-shadow(0 0 20px #00d9ff);">
 
-    <a href="./index.html">Volver al inicio</a>
+  <p>La serie Gears of War es una de las franquicias más reconocidas en el género de los videojuegos de disparos en tercera persona. 
+     Desarrollada por Epic Games y publicada por Microsoft Studios, la serie se centra en la lucha de la humanidad contra 
+     una raza de criaturas conocidas como los Locust, que emergen de debajo de la tierra para atacar a la humanidad. 
+     El juego es conocido por su jugabilidad intensa, su historia épica y su estilo visual oscuro y atmosférico.</p>
     
-        <script>
-            const headers = document.querySelectorAll('.accordion-header');
-            headers.forEach(header => {
-                header.addEventListener('click', () => {
-                    const item = header.parentElement;
-                    const accordion = item.parentElement;
-                
-                    accordion.querySelectorAll('.accordion-item').forEach(i => {
-                        if (i !== item) i.classList.remove('active');
-                });
-                item.classList.toggle('active');
-            });
+  <h2>🔥 Aquí te muestro un top de los mejores juegos de Gears of War según la crítica 🔥</h2>
+
+  <div class="accordion">
+    <div class="accordion-item">
+      <div class="accordion-header">1. Gears of War 2 (100/100)</div>
+      <div class="accordion-content">
+        <p>Considerado por muchos como el mejor de toda la saga. La guerra contra los Locust se intensifica 
+           cuando las ciudades humanas comienzan a hundirse misteriosamente. Marcus y Delta Squad emprenden una 
+           ofensiva a gran escala para detener la amenaza desde su origen.
+           <br>
+           La historia adquiere una profundidad emocional notable, especialmente a través de la búsqueda de Dom Santiago 
+           por encontrar a su esposa María. El juego amplía enormemente el universo, introduce enemigos más variados y 
+           presenta algunas de las batallas más espectaculares de la franquicia.</p>
+        <img src="./img/gears-of-war-2-portada.jpg" alt="Gears of War 2" height="400" width="300">
+      </div>
+    </div>
+  </div>
+
+  <a href="./index.html">Volver al inicio</a>
+
+  <script>
+    const headers = document.querySelectorAll('.accordion-header');
+    headers.forEach(header => {
+      header.addEventListener('click', () => {
+        const item = header.parentElement;
+        const accordion = item.parentElement;
+        accordion.querySelectorAll('.accordion-item').forEach(i => {
+          if (i !== item) i.classList.remove('active');
         });
-        </script>
+        item.classList.toggle('active');
+      });
+    });
+  </script>
 </body>
 </html>
